@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="margin">10dp</dimen>
+    <dimen name="margin_layout">30dp</dimen>
+    <dimen name="radius">6dp</dimen>
+    <dimen name="padding_imagen">40dp</dimen>
+    <dimen name="elevacion_actionbar">4dp</dimen>
+    <dimen name="tamanio_titulo">20dp</dimen>
+    <dimen name="tam_form">24dp</dimen>
+    <dimen name="tam_subtitulo">16dp</dimen>
+</resources>

@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">MascotasRating</string>
+    <string name="menu_contacto">Contacto</string>
+    <string name="menu_acerca_de">Acerca de</string>
+    <string name="formulario">Formulario</string>
+    <string name="nombre">Nombre:</string>
+    <string name="correo">Correo:</string>
+    <string name="mensaje">Mensaje:</string>
+    <string name="boton_form">Enviar Comentario</string>
+    <string name="acerca_de">Mi nombre es Camilo Jaramillo soy Ingeniero en sistemas y computación de la universidad de Caldas. Tengo 5 años de experiencia en desarrollo web y móvil, un apasionado de la programación y con muchos deseos de seguir aprendiendo y reforzando mis conocimientos adquiridos.</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activities.FormularioActivity">
+
+    <include
+        android:id="@+id/miActionBar"
+        layout="@layout/action_bar">
+    </include>
+
+    <TextView
+        android:layout_below="@+id/miActionBar"
+        android:id="@+id/tvForm"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/formulario"
+        android:gravity="center"
+        android:textSize="@dimen/tam_form"
+        android:textColor="@color/primary"
+        android:textStyle="bold"
+        android:layout_marginTop="@dimen/margin"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvForm"
+        android:layout_marginTop="@dimen/margin_layout"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/nombre"
+                android:layout_marginLeft="@dimen/margin"
+                android:textSize="@dimen/tam_subtitulo"
+                android:layout_gravity="bottom"/>
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/etNombre"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/margin"
+                android:layout_marginLeft="@dimen/margin"
+                android:inputType="text"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/correo"
+                android:layout_marginLeft="@dimen/margin"
+                android:textSize="@dimen/tam_subtitulo"
+                android:layout_gravity="bottom"/>
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/etCorreo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/margin"
+                android:layout_marginLeft="@dimen/margin"
+                android:inputType="textEmailAddress"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/mensaje"
+                android:layout_marginLeft="@dimen/margin"
+                android:textSize="@dimen/tam_subtitulo"
+                android:layout_gravity="bottom"/>
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/etMensaje"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/margin"
+                android:layout_marginLeft="@dimen/margin"
+                android:inputType="text"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_layout"
+                android:text="Nota: Para que funcione el envío de correo es necesario ejecutar la aplicación desde un celular y no desde el emulador del android."
+                android:layout_marginLeft="@dimen/margin"
+                android:textStyle="bold|italic"
+                android:textSize="@dimen/tam_subtitulo" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+    <Button
+        android:id="@+id/btnEnviarComentario"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/primary_light"
+        android:textSize="@dimen/tamanio_titulo"
+        android:textColor="@color/titulos"
+        android:text="@string/boton_form"/>
+
+
+</RelativeLayout>
